@@ -20,7 +20,7 @@ public class BulletDamage : MonoBehaviour
         {
             RecieveDamage();
             Destroy(gameObject);
-            print(EnemyController.enemyHealth);
+            //print(EnemyController.enemyHealth);
         }
     }
 

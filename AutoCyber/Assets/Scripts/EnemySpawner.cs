@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyToSpawn;
-    private int enemyTestNumber;
+    public static int enemyTestNumber;
     public Color blueColor;
     public Color currentColor;
     // Start is called before the first frame update
@@ -25,19 +25,20 @@ public class EnemySpawner : MonoBehaviour
         {
             /////////////////////////Testeo de contador de enemigos
             enemyTestNumber++;
-            print("Este es el enimgo " + enemyTestNumber);
+            //print("Este es el enimgo " + enemyTestNumber);
             if(enemyTestNumber == 1)
             {
                 enemyToSpawn.GetComponent<SpriteRenderer>().color = blueColor;    
             }
-            else
+            /*else
             {
                 enemyToSpawn.GetComponent<SpriteRenderer>().color = currentColor;
                 enemyTestNumber = 0;
-            }
+            }*/
 
             EnemyController.enemyDead = false;
             Instantiate(enemyToSpawn, new Vector2(transform.position.x, transform.position.y), Quaternion.identity);
+            print(enemyTestNumber);
         }
     }
 }

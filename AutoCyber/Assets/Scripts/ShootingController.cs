@@ -9,6 +9,7 @@ public class ShootingController : MonoBehaviour
     public GameObject shootLocation;
     public float bulletSpeed;
     public int fireRate;
+    public int fireSpeed;
 
 
     // Start is called before the first frame update
@@ -29,7 +30,7 @@ public class ShootingController : MonoBehaviour
     //Function to establish the firing rate of the weapon
     public void StartShootig()
     {
-        if(fireRate >= 500f)
+        if(fireRate >= fireSpeed)
         {
             Invoke("BulletGenerator", 1f * Time.deltaTime);
             fireRate = 0;
