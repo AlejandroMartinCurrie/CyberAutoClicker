@@ -7,7 +7,7 @@ public class BossCountDownController : MonoBehaviour
 {
 
     public bool bosBarFull;
-
+    [SerializeField] Image fill;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class BossCountDownController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponentInChildren<Slider>().value = EnemySpawner.enemyTestNumber;
+       fill.fillAmount= EnemySpawner.enemyTestNumber/10f    ;
 
 
         if(EnemySpawner.enemyTestNumber >= 10)

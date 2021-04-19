@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Render Pipeline/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/Home_Scene.unity
+    guid: 708df1d7c3abc494c9a5de32b41dab71
+  - enabled: 1
+    path: Assets/Scenes/Gods_Scene.unity
+    guid: 15cf5795a8592db4b818ce9a782f12fc
+  - enabled: 1
+    path: Assets/Scenes/Dungeon_Scene.unity
+    guid: 3bb834e302c2e1c43bb2d314aa0f30a0
+  - enabled: 1
+    path: Assets/Scenes/Craft_Scene.unity
+    guid: 5cbb23a5fbb06f54886e1eda94cd2337
+  - enabled: 1
+    path: Assets/Scenes/Shop_Scene.unity
+    guid: 2e29aca572700b84da6b392f4c232553
   m_configObjects: {}
